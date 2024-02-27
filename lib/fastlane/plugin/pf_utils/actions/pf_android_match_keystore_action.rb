@@ -41,7 +41,7 @@ module Fastlane
         [
           FastlaneCore::ConfigItem.new(key: :keystore,
                                        description: "The keystore file name",
-                                       optional: false),
+                                       optional: true),
           FastlaneCore::ConfigItem.new(key: :type,
                                        description: "Type of keystore (debug/release)",
                                        optional: true,
