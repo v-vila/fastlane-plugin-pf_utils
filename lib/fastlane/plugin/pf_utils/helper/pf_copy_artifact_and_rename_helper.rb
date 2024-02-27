@@ -4,12 +4,12 @@ module Fastlane
   UI = FastlaneCore::UI unless Fastlane.const_defined?(:UI)
 
   module Helper
-    class PfMatchKeystoreAndroidHelper
+    class PfCopyArtifactAndRenameHelper
       # class methods that you define here become available in your action
-      # as `Helper::PfMatchKeystoreAndroidHelper.your_method`
+      # as `Helper::CopyArtifactAndRenameHelper.your_method`
       #
       def self.show_message
-        UI.message("Hello from the pf_match_keystore_android plugin helper!")
+        UI.message("Hello from the pf_copy_artifact_and_rename plugin helper!")
       end
     end
   end
