@@ -1,9 +1,8 @@
 require 'fastlane/action'
-require_relative '../helper/pf_utils_helper'
 
 module Fastlane
   module Actions
-    class PfUtilsAction < Action
+    class PfNexusUploadAsZipAction < Action
       def self.run(params)
         UI.message("The pf_utils plugin is working!")
       end
