@@ -27,7 +27,7 @@ module Fastlane
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :env_file_path,
                                        description: "Path to the environment file",
-                                       optional: false)
+                                       optional: true)
         ]
       end
 
