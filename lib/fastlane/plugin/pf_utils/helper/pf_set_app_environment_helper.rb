@@ -4,12 +4,12 @@ module Fastlane
   UI = FastlaneCore::UI unless Fastlane.const_defined?(:UI)
 
   module Helper
-    class PfMatchKeystoreAndroidHelper
+    class PfSetAppEnvironmentHelper
       # class methods that you define here become available in your action
-      # as `Helper::PfMatchKeystoreAndroidHelper.your_method`
+      # as `Helper::PfSetAppEnvironmentHelper.your_method`
       #
       def self.show_message
-        UI.message("Hello from the pf_match_keystore_android plugin helper!")
+        UI.message("Hello from the pf_set_app_environment plugin helper!")
       end
     end
   end
