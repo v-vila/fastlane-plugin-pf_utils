@@ -11,7 +11,7 @@ module Fastlane
           classifier = params[:classifier] ? "#{params[:classifier]}-#{artifact_extension}" : artifact_extension
 
           nexus_upload(
-            nexus_version: params[:nexus_version],
+            nexus_version: params[:nexus_version].to_s,
             mount_path: params[:mount_path],
             file: outputFilePath,
             repo_id: params[:repo_id],
@@ -26,7 +26,7 @@ module Fastlane
           )
         else
           nexus_upload(
-            nexus_version: params[:nexus_version],
+            nexus_version: params[:nexus_version].to_s,
             mount_path: params[:mount_path],
             file: params[:artifact],
             repo_id: params[:repo_id],
@@ -57,7 +57,6 @@ module Fastlane
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :version,
                                        description: "Version of the artifact",
-                                       type: Integer,
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :classifier,
                                        description: "Classifier for the artifact",
@@ -66,7 +65,7 @@ module Fastlane
           FastlaneCore::ConfigItem.new(key: :as_zip,
                                        description: "Flag to indicate if artifact should be zipped before upload",
                                        optional: true,
-                                       type: Boolean
+                                       is_string: false,
                                        default_value: false),
           FastlaneCore::ConfigItem.new(key: :nexus_version,
                                        description: "Nexus version",
@@ -103,7 +102,7 @@ module Fastlane
           FastlaneCore::ConfigItem.new(key: :verbose,
                                        description: "Verbose output",
                                        optional: true,
-                                       type: Boolean,
+                                       is_string: false,
                                        default_value: true)
         ]
       end
