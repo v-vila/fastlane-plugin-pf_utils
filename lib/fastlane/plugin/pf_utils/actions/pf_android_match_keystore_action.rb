@@ -30,24 +30,24 @@ module Fastlane
       end
 
       def self.description
-        "Clone and retrieve keystore from a Git repository"
+        "Android Match Keystore Action"
       end
 
       def self.authors
-        ["Your Name"]
+        ["Plataforma SDM"]
       end
 
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :keystore,
-                                       description: "The keystore file name",
+                                       description: "Keystore",
                                        optional: true),
           FastlaneCore::ConfigItem.new(key: :type,
-                                       description: "Type of keystore (debug/release)",
+                                       description: "Type (debug/release)",
                                        optional: true,
                                        default_value: "debug"),
           FastlaneCore::ConfigItem.new(key: :force,
-                                       description: "Force clone even if keystore exists locally",
+                                       description: "Force clone",
                                        optional: true,
                                        is_string: false,
                                        default_value: false)

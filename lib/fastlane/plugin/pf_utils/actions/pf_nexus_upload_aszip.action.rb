@@ -12,7 +12,7 @@ module Fastlane
       end
 
       def self.authors
-        ["Virginia Vila"]
+        ["Plataforma"]
       end
 
       def self.return_value

@@ -13,17 +13,17 @@ module Fastlane
       end
 
       def self.description
-        "Set the environment in the app"
+        "Sets the environment"
       end
 
       def self.authors
-        ["Your Name"]
+        ["Plataforma SDM"]
       end
 
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :env,
-                                       description: "The environment",
+                                       description: "Environment",
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :env_file_path,
                                        description: "Path to the environment file",
