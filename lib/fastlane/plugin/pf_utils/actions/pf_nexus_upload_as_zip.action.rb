@@ -57,7 +57,7 @@ module Fastlane
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :nexus_version,
                                        description: "Nexus Version",
-                                       is_string: false
+                                       is_string: false,
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :repo_project_version,
                                        description: "Repo project version",
