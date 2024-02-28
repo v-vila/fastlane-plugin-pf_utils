@@ -2,7 +2,7 @@ require 'fastlane/action'
 
 module Fastlane
   module Actions
-    class NexusUploadAction < Action
+    class PfNexusUploadAsZipAction < Action
       def self.run(params)
         if params[:as_zip]
           artifact_extension = File.extname(params[:artifact]).shellescape[1..-1]

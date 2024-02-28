@@ -2,7 +2,7 @@ require 'fastlane/action'
 
 module Fastlane
   module Actions
-    class PfCopyCustomArtifactsAction < Action
+    class PfCopyArtifactAndRenameAction < Action
       def self.run(params)
         app_name = params[:app_name]
         artifact_path = params[:artifact_path]

@@ -6,10 +6,10 @@ module Fastlane
   module Helper
     class PfNexusUploadAsZipHelper
       # class methods that you define here become available in your action
-      # as `Helper::PfNexusUploadAsZipHelper.your_method`
+      # as `Helper::NexusUploadAsZipHelper.your_method`
       #
       def self.show_message
-        UI.message("Hello from the pf_nexus_upload_aszip plugin helper!")
+        UI.message("Hello from the pf_nexus_upload_as_zip plugin helper!")
       end
     end
   end
