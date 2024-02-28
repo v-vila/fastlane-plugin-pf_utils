@@ -57,7 +57,7 @@ module Fastlane
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :version,
                                        description: "Version of the artifact",
-                                       is_string: false,
+                                       type: Integer,
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :classifier,
                                        description: "Classifier for the artifact",
@@ -66,6 +66,7 @@ module Fastlane
           FastlaneCore::ConfigItem.new(key: :as_zip,
                                        description: "Flag to indicate if artifact should be zipped before upload",
                                        optional: true,
+                                       type: Boolean
                                        default_value: false),
           FastlaneCore::ConfigItem.new(key: :nexus_version,
                                        description: "Nexus version",
@@ -102,6 +103,7 @@ module Fastlane
           FastlaneCore::ConfigItem.new(key: :verbose,
                                        description: "Verbose output",
                                        optional: true,
+                                       type: Boolean,
                                        default_value: true)
         ]
       end
