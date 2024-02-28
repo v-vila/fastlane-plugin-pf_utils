@@ -57,6 +57,7 @@ module Fastlane
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :version,
                                        description: "Version of the artifact",
+                                       is_string: false,
                                        optional: false),
           FastlaneCore::ConfigItem.new(key: :classifier,
                                        description: "Classifier for the artifact",
